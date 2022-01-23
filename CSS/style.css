@@ -1,0 +1,291 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  transition: 0.7s;
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  transition: all 0.7 ease;
+  display: block;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../IMAGES/andrew-neel-cckf4TsHAuw-unsplash.jpg);
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../IMAGES/andrew-neel-cckf4TsHAuw-unsplash.jpg); /*
+  background-color: rgb(6, 6, 20);*/
+}
+.sticky_header {
+  top: 0;
+  height: 70px;
+  position: fixed;
+}
+header > .logo {
+  height: 80px;
+  width: 35%;
+  transition: 0.7s;
+  position: relative;/*
+  background-color: red;*/
+}
+header > .logo > a {
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+header > .logo > a > .img {
+  position: relative;
+  display: block;
+  height: 80px;
+  object-fit: contain;
+  margin: 0 auto 0 auto;
+}
+section > .container {
+  width: 100%;
+  height: 740px;
+  margin-top: 80px;
+  display: inline-block;
+  position: relative;/*
+  background-color: red;*/
+  padding: 25px 0 0 0;
+}
+section > .container > .inside-container {
+  height: 690px;
+  width: 80%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+section > .container > .inside-container > .title {
+  height: 45px;
+  width: 80%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto 0 auto;
+}
+section > .container > .inside-container > .title > span {
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  font-family: 'Times new roman' Arial, sans-serif;
+  text-align: center;
+}
+section > .container > .inside-container > .lines {
+  height: 20px;
+  width: 70%;
+  margin: 0 auto 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+section > .container > .inside-container > .lines > .hor {
+  height: 15px;
+  width: 45%;
+  display: inline-flex;
+  align-items: center;
+}
+section > .container > .inside-container > .lines > .star {
+  height: 20px;
+  width: 10%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+section > .container > .inside-container > .list-container {
+  height: 590px;
+  width: 60%;/*
+  background-color: red;*/
+  margin: 0 auto 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section > .container > .inside-container > .list-container > .adding {
+  height: 35px;
+  width: 70%;
+  position: relative;/*
+  background-color: blue;*/
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+section > .container > .inside-container > .list-container > .adding > input[type=text]{
+  height: 30px;
+  width: 65%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0;
+}
+section > .container > .inside-container > .list-container > .adding > input[type=text]:focus {
+  width: 100%;
+  border: 0;
+}
+section > .container > .inside-container > .list-container > .adding > input[type=submit]{
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+}
+section > .container > .inside-container > .list-container > .adding > #add {
+  height: 30px;
+  width: 50px;
+  border: 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../IMAGES/plus.png);
+}
+section > .container > .inside-container > .list-container > .adding > #add:hover {
+  cursor: pointer;
+}
+section > .container > .inside-container > .list-container > .items {
+  width: 100%;
+  height: auto;
+  margin-top: 18px;
+  float: right;
+  padding:  0 15px 0 30px;
+  overflow: auto;
+  background-color: rgb(230, 230, 230);
+}
+.Listcont {
+  padding: 7px 0 7px 0;
+}
+.rem {
+  display: none;
+  float: right;
+  color: rgb(253, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border: none;
+}
+.Listcont:hover .rem {
+  display: block;
+}
+footer {
+  height: 67px;
+  width: 100%;
+  display: flex;
+  align-items: center;/*
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;*/
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+footer > p {
+  height: fit-content;
+  color: #fff;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  header {
+    height: 65px;
+    width: 100%;
+  }
+  header > .logo {
+    height: 65px;
+    width: 35%;
+    position: relative;
+  }
+  header > .logo > a > .img {
+    height: 65px;
+  }
+  .sticky_header {
+    top: 0;
+    height: 50px;
+    position: fixed;
+  }
+  section > .container {
+    margin-top: 55px;
+  }
+  section > .container > .inside-container > .title {
+    align-items: baseline;
+    height: 40px;
+  }
+  section > .container > .inside-container > .title > span {
+    font-size: 30px;
+  }
+  section > .container > .inside-container > .lines {
+    width: 40%;
+  }
+  section > .container > .inside-container > .list-container {
+    width: 70%;
+  }
+  section > .container > .inside-container > .list-container > .adding {
+    width: 90%;
+    margin-top: 35px;
+  }
+  section > .container > .inside-container > .list-container > .adding > input[type=text]{
+    width: 75%;
+  }
+  section > .container > .inside-container > .list-container > .adding > #add:hover {
+    cursor: pointer;
+  }
+  section > .container > .inside-container > .list-container > .items {
+    width: 100%;
+    height: auto;
+    margin-top: 18px;
+    float: right;
+    padding:  0 15px 0 30px;
+    overflow: auto;
+    background-color: rgb(230, 230, 230);
+  }
+  .rem {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    height: 60px;
+    width: 100%;
+  }
+  header > .logo {
+    height: 60px;
+    width: 35%;
+    position: relative;
+  }
+  header > .logo > a > .img {
+    height: 55px;
+  }/*
+  section > .container {
+    height: 100%;
+  }*/
+  section > .container > .inside-container {
+    width: 97%;
+  }
+  section > .container > .inside-container > .lines {
+    width: 90%;
+  }
+  section > .container > .inside-container > .list-container {
+    width: 90%;
+  }
+  section > .container > .inside-container > .list-container > .adding {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section > .container > .inside-container > .list-container > .adding > input[type=text]{
+    width: 80%;
+  }
+  footer p {
+    font-size: 11px;
+  }
+}
